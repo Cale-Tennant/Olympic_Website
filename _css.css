@@ -1,0 +1,265 @@
+/* Fonts */
+@font-face { font-family: "Montserrat"; src: url("/Fonts/Montserrat-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("/Fonts/Montserrat-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("/Fonts/Montserrat-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("/Fonts/Montserrat-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+
+html { font-family: "Montserrat", sans-serif; }
+body { font-weight: 400; background-color: LemonChiffon; margin: 0; }
+
+/* Body */
+body {
+	position: relative;
+}
+
+/* Images */
+img.top_right {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 200px;
+  height: auto; 
+}
+
+img.flags {
+	border: 2px solid black;
+	width: 300px;
+	height: auto;
+	margin-top: -30px;
+}
+
+img.summerVwinter {
+	border: 2px solid black;
+	width: 500px;
+	height: auto;
+	margin-left: 50px;
+}
+
+/* Div */
+div.SideBySide {
+	display: flex;
+	gap: 10px;
+}
+
+/* Feedback Form */
+input.names {
+  margin-bottom: 20px;
+  margin-top: 2px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  width: 150px;
+}
+
+input.feedback {
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  width: 750px;
+  margin-bottom: 20px;
+}
+
+input.submit {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+input.submit:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* Lists */
+ul.bpList {
+	margin-top: -13px;
+}
+
+ol.numList {
+	margin-top: -13px;
+	flex: 0 0 auto;
+}
+
+/* Headings */
+h1.website_name {
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+h2.page_name {
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.2em;
+  margin: 20px 0;
+}
+
+h3.records {
+	font-size: 22px;
+}
+
+/* Paragraphs */
+p.date {
+	text-align: center;
+	margin-top: -25px
+}
+
+p.countries {
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+/* Buttons Inside h2 */
+.page_name .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.page_name button {
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.4s;
+  width: 230px;
+}
+
+.page_name button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* Olympic Colors */
+.page_name button.blue { background-color: #0081c8; }
+.page_name button.yellow { background-color: #f4c300; color: black; }
+.page_name button.black { background-color: #000000; }
+.page_name button.green { background-color: #00a651; }
+.page_name button.red { background-color: #ee334e; }
+
+/* Emphasis */
+em { font-style: italic; }
+
+/* Layout */
+.container {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+.left {
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.right {
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Vertical Seperator Line */
+.v-line {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+/* Image Cycler */
+.Image_Cycle {
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.Image_Cycle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
+}
+
+.Image_Cycle button {
+  position: absolute;
+  bottom: 10px;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Image_Cycle button.previous {
+  right: 90%;
+  transform: translateX(-50%);
+}
+
+.Image_Cycle button.next {
+  left: 90%;
+  transform: translateX(50%);
+}
+
+/* Records Spliting */
+.records_section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.list_holder {
+  flex: 2;
+}
+
+.right_content {
+  flex: 1;
+  padding-top: 60px;
+  padding-left: 150px;
+  border-radius: 5px;
+}
+
+/* Medal Reveal Button */
+.reveal_button {
+  font-size: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: rgb(255, 204, 203);
+  color: black;
+  transition: 0.4s;
+}
+.reveal_button:disabled {
+  cursor: default;
+}
+
+.reveal_button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
